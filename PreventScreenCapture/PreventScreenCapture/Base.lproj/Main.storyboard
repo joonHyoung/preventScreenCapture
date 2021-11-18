@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PreventScreenCapture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjG-oL-ZN4">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="캡처하시면 안되요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zy0-iC-fkZ">
+                                        <rect key="frame" x="38" y="106.5" width="164" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstItem="zy0-iC-fkZ" firstAttribute="centerY" secondItem="jjG-oL-ZN4" secondAttribute="centerY" id="Orv-0u-0Xh"/>
+                                    <constraint firstAttribute="width" constant="240" id="SiL-QS-tjR"/>
+                                    <constraint firstItem="zy0-iC-fkZ" firstAttribute="centerX" secondItem="jjG-oL-ZN4" secondAttribute="centerX" id="sTn-3j-qqI"/>
+                                    <constraint firstAttribute="height" constant="240" id="tS8-gH-2tm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-O2-OIe">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여기를 챕처 방지 처리하면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyo-In-3v8">
+                                        <rect key="frame" x="17.5" y="108" width="205" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="00g-4D-bm4"/>
+                                    <constraint firstAttribute="width" constant="240" id="DOO-IN-4r9"/>
+                                    <constraint firstItem="Dyo-In-3v8" firstAttribute="centerX" secondItem="8AK-O2-OIe" secondAttribute="centerX" id="I78-cr-rAC"/>
+                                    <constraint firstItem="Dyo-In-3v8" firstAttribute="centerY" secondItem="8AK-O2-OIe" secondAttribute="centerY" id="Qwf-zt-95k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jjG-oL-ZN4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0aI-Kt-H8a"/>
+                            <constraint firstItem="8AK-O2-OIe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZAt-lf-ySL"/>
+                            <constraint firstItem="8AK-O2-OIe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZG5-Ph-zKk"/>
+                            <constraint firstItem="jjG-oL-ZN4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wt3-Ok-80W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="secureView" destination="8AK-O2-OIe" id="h1Y-Di-23q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
